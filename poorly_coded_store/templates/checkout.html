@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Amadon</title>
+</head>
+<body>
+    <h3>Thank you for your business!</h3>
+    <p>We charged your credit card for ${{specific_product.price}}</p>
+    <p>You have ordered #{{request.session.specific_order_quantity}} items so far and spent $${{request.session.specific_order_total_price}} with Amadon.com!</p>
+    <p><a href="/">Go Back</a></p>
+
+    <p>{{x}}</p>
+
+    <!-- {%for order in allorders%}
+    <p>quantity_ordered:{{order.quantity_ordered}}</p>
+    <p>total_price:{{order.total_price}}</p>
+    {%endfor%} -->
+
+    <p>Total amount of price you ordered until know: ${{ total_amount_charged }}</p>
+    <p>Total amount of quantity you ordered until know: #{{ total_amount_quantitiy}}</p>
+    
+
+</body>
+</html>
+
+
+
